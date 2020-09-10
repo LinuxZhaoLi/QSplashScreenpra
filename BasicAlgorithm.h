@@ -116,7 +116,8 @@ public:
 	BOOL SHGetHarmonic( FLOAT32 * pData, INT32 perCycPoints, INT32 beginNum, INT32 maxNum, FLOAT32 * pHarmonic );
 
 	/* {{{USR
-	******************************************************************************
+	*****************************************************************************
+	*/
 	/* {{{USR
 	******************************************************************************
 	  Function:		//BOOL SHGetPower( FLOAT32 * pDataU, FLOAT32 * pDataI, INT32 perCycPoints, FLOAT32 * pPower )

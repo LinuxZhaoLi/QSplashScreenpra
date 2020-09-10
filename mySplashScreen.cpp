@@ -4,24 +4,24 @@
 #include <QLabel>
 #include <QTimer>
 
-MySplashScreen::MySplashScreen(const QPixmap & pixmap) : QSplashScreen(pixmap)
+MySplashScreen::MySplashScreen(const QPixmap & pixmap) : QSplashScreen(pixmap)  // 传入对象类
 {
 
 }
 
-MySplashScreen::MySplashScreen( const QString gifname )
+MySplashScreen::MySplashScreen( const QString gifname ) // 如果传入的是名字
 {
     setGif(gifname);
 }
 
 
-void MySplashScreen::slot_update()
+void MySplashScreen::slot_update()              // 更新图片
 {
     setPixmap(m_move->currentPixmap());
     repaint();
 }
 
-void MySplashScreen::drawContents(QPainter *painter)
+void MySplashScreen::drawContents(QPainter *painter)  // 画图说明
 {
     painter->setFont(QFont("SimHei", 40));
     painter->setPen(QColor(213, 218, 220));
